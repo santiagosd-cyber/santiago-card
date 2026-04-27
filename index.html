@@ -9,25 +9,50 @@
 <body>
     <main>
         <header>
+
+            <!-- boton del modo dark -->
+            <div class="boton-dark">
+    <button id="modo-oscuro">Modo oscuro</button>
+</div>
+
+<div class="colores">
+    <button id="verde" class="btn-verde">Verde</button>
+    <button id="amarillo" class="btn-amarillo">Amarillo</button>
+    <button id="rojo" class="btn-rojo">Rojo</button>
+</div>
+
+          <div class="editar-container">
+                <button id="mostrar-form">Modificar datos</button>
+            </div>
+
+            <form id="formulario" class="oculto">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="descripcion" placeholder="Descripción">
+                <input type="number" id="edad" placeholder="Edad">
+                <input type="text" id="altura" placeholder="Altura">
+                <input type="number" id="peso" placeholder="Peso">
+                <button type="submit">Guardar</button>
+            </form>
+
       <section class="card">
         <div class="avatar">
             <img src="icono.jpg" alt="icono de perfil de zoro">
         </div>
-        <h1>Zoro Roronoa</h1>
-        <p>El segundo mejor espadachin</p>
+        <h1 id="nombrePerfil">Zoro Roronoa</h1>
+        <p id="descripcionPerfil">El segundo mejor espadachin</p>
         </section>
         <section class="card2">
         <div class="info">
             <div>
-                <h3>21</h3>
+                <h3 id="edadPerfil">21</h3>
                 <p>Edad</p>
             </div>
             <div>
-                <h3>1.90m</h3>
+                <h3 id="alturaPerfil">1.90m</h3>
                 <p>Altura</p>
             </div>
             <div>
-                <h3>90kg</h3>
+                <h3 id="pesoPerfil">90kg</h3>
                 <p>Peso</p>
             </div>
         </div>
@@ -39,10 +64,12 @@
          </header>
       </section>
     </main>
+
    
 
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
